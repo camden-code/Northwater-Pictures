@@ -47,8 +47,9 @@ export function SiteHeader() {
             <Link
               to="/"
               onClick={() => setOpen(false)}
-              className="font-heading text-3xl tracking-wide whitespace-nowrap uppercase"
+              className="flex items-center gap-3 font-heading text-3xl tracking-wide whitespace-nowrap uppercase"
             >
+              <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="" aria-hidden className="size-9" />
               Northwater&nbsp;Pictures
             </Link>
             <nav className="hidden items-center gap-6 sm:flex">
